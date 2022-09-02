@@ -34,11 +34,27 @@ git init
 git status
 ```
 
-* Para 
+* Agrega los archivos a la memoria de la PC 
 
 ```bash
 git add.
 ```
+
+* Crear el registro de los cambios realizados
+
+```bash
+git commit -m "comentario"
+```
+
+* Comando para poder ver el historial de commits
+
+[ ] Git log retorna un `id`con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit.
+
+```bash
+git log
+```
+
+
 
 
 
