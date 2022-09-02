@@ -57,9 +57,14 @@ git log
 * Para mostrar los cambios del commit
 
 ```bash
-git show
+git show "codigo del commit"
 ```
 
+* Para cambiar de master a main
+
+```bash
+git bran -M main
+```
 
 
 
