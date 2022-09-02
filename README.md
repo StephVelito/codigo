@@ -54,6 +54,12 @@ git commit -m "comentario"
 git log
 ```
 
+* Para mostrar los cambios del commit
+
+```bash
+git show
+```
+
 
 
 
