@@ -68,7 +68,7 @@ git bran -M main
 
 * Para mandar al repositorio
 ```bash
-git pusho origin main
+git push origin main
 ````
 
 
