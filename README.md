@@ -37,7 +37,7 @@ git status
 * Agrega los archivos a la memoria de la PC 
 
 ```bash
-git add.
+git add .
 ```
 
 * Crear el registro de los cambios realizados
@@ -65,6 +65,12 @@ git show "codigo del commit"
 ```bash
 git bran -M main
 ```
+
+* Para mandar al repositorio
+```bash
+git pusho origin main
+````
+
 
 
 
