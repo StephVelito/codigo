@@ -69,12 +69,8 @@ git bran -M main
 * Para mandar al repositorio
 ```bash
 git push origin main
-<<<<<<< HEAD
 ```
-=======
-````
 
->>>>>>> d5bd2ad7d836fcb6ab0fa944c62dd3d1d46cf310
 
 
 
