@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+   <!--Para crear un formulario necessitamos la etiqueta form  -->
+   <form action="">
+    <p>
+        <input type="text" placeholder="ingrese su nombre" />
+    </p>
+
+    <!--INPUT type: text -->
+    <p>
+        <input type="number" placeholder="ingrese su edad" />
+    </p>
+    <!-- INPUT type number-->
+    <p>
+        <input type="email" placeholder="ingrese su correo" />
+    </p>
+    <!--Input type email-->
+    <p>
+        <input type="password" placeholder="ingrese su contraseña" />
+    </p>
+    <!--Input type password-->
+    <p>
+        <input type="date" placeholder="ingrese su fecha" />
+    </p>
+
+    <p>
+        <select>
+            <option value=""disable selected> Selecciona un curso</option>
+            <option value=""> Curso de React</option>
+            <option value=""> Curso de HTML</option>
+            <option value=""> Curso de CSS</option>
+            <option value=""> Curso de Angular</option>
+        </select>
+    </p>
+
+    <!-- Botones para enviar datos - como los de aceptar o cancelar -->
+    <button type="submit">Enviar datos con boton</button>
+    <input type="submit" value="Enviar datos con Input" />
+    <!--los dos anteriores hacen lo mismo, pero es preferible el button-->
+   </form>
+</body>
+</html>
