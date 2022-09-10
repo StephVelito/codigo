@@ -1,0 +1,28 @@
+/*Selectores*/
+/*Selectores de elemento*/
+h1 {
+    color:rgb(42, 52, 49);
+    background-color: beige;
+    padding: 20px;
+    text-align: center;
+
+#div_temas {display: none}
+}
+.product_cell{
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    
+}
+
+.laptop > h2 {
+    color:blue;
+
+}
+
+.laptop > h3 {
+    color: aqua;
+    text-align: right;
+    padding-right: 10px;
+}
