@@ -5,6 +5,7 @@ h1 {
     background-color: beige;
     padding: 20px;
     text-align: center;
+    font-size: 3rem;
 
 #div_temas {display: none}
 }
