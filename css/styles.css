@@ -1,14 +1,16 @@
 /*Selectores*/
 /*Selectores de elemento*/
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
 h1 {
     color:rgb(42, 52, 49);
     background-color: beige;
     padding: 20px;
     text-align: center;
     font-size: 3rem;
-
-#div_temas {display: none}
-}
+    font-family: sans-serif ; }
 .product_cell{
     border: 2px solid red;
     border-radius: 10px;
@@ -30,6 +32,7 @@ h1 {
 
 .laptop > h2 {
     color:blue;
+    font-family: "ABeeZee";
 
 }
 
