@@ -1,109 +1,104 @@
 <html>
-    <head>
-        <!--  segunda forma para usar los style es ponerlo dentro de nuestra <head> para que todos coloquen el mismo style-->
-        <title> Inicio </title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+  <head>
+    <title>Inicio</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div style="margin: 0px auto; padding: 0;">
+      <header style="font-size: 20px">
+        <h1>Apple.com</h1>
+        <p style="text-align: center">Productos top</p>
+      </header>
+      <main>
 
-<link rel="stylesheet" href="./css/styles.css">
-
-    </head>
-    <body>
-        <div style="width: 800px; margin: 10px auto;">
-<!-- Cmd + flecha arriba + 7 (con teclado numerico es Cmd + /) -->
-<header style="font-size: 40px">
-    <h1 style="text-align:center;">Apple.com</h1>
-    <p style="text-align:center;">Productos top</p>
-</header>
-<main>
-    <!--para volverlo "invisible" ponemos style="display:none"-->
-    <div>
-        <h4>Temas</h4>
-        <ul>
+        <div id="div_temas">
+          <h4>Menu</h4>
+          <ul>
             <li>
-                <a href="./formulario.html">Formulario</a>
+              <a href="./formulario.html">Formularios</a>
             </li>
             <li>
-                <a href="./Reto1.html">Reto 1</a>
+              <a href="./tablas.html">Tablas</a>
             </li>
             <li>
-                <a href="./tablas.html">Tablas</a>
+              <a href="./reto1.html">Reto 1</a>
             </li>
-        </ul>
-    </div>
-<table>
-    <tr>
-        <td>
-            <div class="product_cell celular">
-                <h2>iPhone 13</h2>  
-                <h3 class="price">100</h3>
-                <img width="200px" src="https://www.mac-center.com.pe/ccstore/v1/images/?source=/file/v6735349307299092673/products/iPhone_13_Verde-1.jpeg" alt="Foto de iPhone 13 color verde"> 
-            </div>
-        </td>
-        <td>
-            <div class="product_cell laptop">
-               <h2>Macbook Pro</h2>
-               <h3> $999 </h3>
-                <img width= "200px" src="data:image/jpeg;base64,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">     
-            </div>
-        </td>
-        <td>
-            <div class="product_cell audifono">
-                <h2>Airpods Pro</h2>
-                <h3> $200</h3>
-                <img width= "200px" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QDw8PEBAQEA0QEA8PDxAPEA8QEBAQFRUWFhURExUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NFQ8NECsZFRkrKzQzKysrKys3Mjc3Ny4tLisrKysrKysrKysrOCsrKzcrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAgQBAwUGB//EADoQAAIBAgIGBwYFBAMBAAAAAAABAgMRBCEFEjFBUXETFGGBkaGxBgcyQlLRYnKSwfAik8PhgrLxI//EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A+4gGEBkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMGQAAAAAAAAABHXXFeJK4AAAAAAAAAAAACOuuK8QJAAAAAAAAAAAAAAAAAAAAAIValue406re139A3eT8DyvtD7wsDgq0sPJVatWFlUVJR1Ytq+q22s7FR6vo1wRjo7bMuR86q++bAQ+LC423GEcNL1qo7nsr7xtG6Sq9XoTqQxDjKcaVenqSmo/FqtNxbSzte9rvcwPVxqtbc1x3oxLFcIt9uQmaoRyXJBW6niYvLNPtN5RnFG7BSbjnnZtEFg01MRFZbXwQxcmoNrJ5LxaRWpwyA3LFfhfkSlVb+HZx+xq1SVHJLkUZ1L7c+Zno1wR5v2s9vNH6MlCniZzdacddUqMHUmoXaUpbFFNp2u87M85T98+j5/DhsdbjKOGivKqwj6NqW2ZehtpVL5PaeL0L7ysBia0KFqtKdSShB1Ix1XN7ItxbtfYevbtJPtAsgAigAAAAAAAAAAAAAAAKd7SfNngvav3XRxmKqYqji3h5Vmp1YTodPBzsk5QtOLjeyus8+B7rGO0+a1l222r9zNOumio+R4n3K4iSaWkaOfHCTj/AJWXPYX3SVMBj6WMr4unVVDXdOFKE4uU5RlC8nLYkpN2XYfUnVISqjBslIxB5LkirVxCRop45asc/lXoFX6kyWi5XjL879EcXFaRiltOl7OzcqOs01rTk433rJX8gLOk5WpN/ih/3RqpTyGnW1h6jim2tSVlwUk2/C5x8HpKLSzA7tyNOWS5Io9eVtu4lh8QmlyQR4P3i+6+ppPGLGUcTCjKVKFOpCrCcleF7Si4vg1lbdtzORhPcpiIpJ6Ro92FnL/Ij65GqbFVA+dez/uljQxFKviMY68aM4VYUqdDoFKcHrR15OpJtJpOyte3A+i1HeSXaiM66RDCy1pr9XJbn3sDogAigAAAAAAAAAAAAAAAKelKGvC6ylF60WtqOI5zi88uWzw3HpmczFUFnvt6Fg56rzaulddhlSrSyUJeDJ4OOrLV3M7NKskkne6yCObhtFzk71XZfSnm+ZrxXs9rSlKNVwTberq3SvuWZ2emj/Ex00ePkwrj4X2apRalUlKq1ueUe9bztpJKyySySRDpo8fJjpo8fJkGw4uM9nKM25QcqUnt1bat+W7uOt00ePkx00ePkwOJQ9nGpJyrNxTTso2v2bSxitFyTcqTy+h/sdPpo8fJjpo8fJlHAfTRycJeDMOvO2asuLO9Urqzte+442OV2orvCK/STk8s/T/Z2NE0HGLlLOU3dvsRXwtBK3gjrRVkktiFGQARQAAAAAAAAAAAAAMSlZXMles7uwGJScuxFaVeGuqd7yd12X4GzG1ujpuS27FzPNqo7p3zTun2lR2K1OzvwNuJcnT1ou0ks+4kpKpCM1vWfY96JYffHiUchYyp9XlH7Eo42ot6fOMfsa8XTUJyjuvdcnma4sDpYfSMW7Tio/iSy7+B0NVcF4I4GqdPRdR2cH8uzlwAuaq4LwRSxOPjF6sYqUt7+Vfc2aQquMLLbLLu3nJ1QN0sdUfBcox/cg8ZU+ryj9jVJmaENecY8X5bwOrgnLU15u7ea2bNxCnC7vxLNdWSitxiNoxcnsirgYdeEZqm3Z2We5N7mWU3HtR5irVcpOT2t3Z39F19enntjk+W4DoQldXJFam9WVtzLJlQAAAAAAAAAAAAAKvzPv8AVFoq1naV937MsHN05U+GH/JnDlI7Ol4f1xe5qxzuhuVG/Q+kFDWhPKDzT4M34jSqjVcY03KKgpKqp09Ryd/6bJ6ytyKy0fPh6GZYNx2qwFWGs85ScpNttvi234ZlqlTJQpFqlSAgqRZwMLSfIzqm+jCy7WBpx8L6veVHSOlVjdWK+r4gc2rTKlWErOzcXZpSjk1dWujr1aRVnSAnR0s3UpwlTdpJ69XXpqEGlk2m9Z3eVkntI6X0hGSVOm7q95Pc7bEjXHCOWxB6Pn9PoBQUrnX0JVtNx+peaKLoWLujKf8A9E9yTv8AzvA7NTau/wDYtFSL1pLs/jLZKoACAAAAAAAAAAABqxFO6y2rZ9jaYugOVUimrPNecWaI4fvOtXw6lmspcePMoVoTjtSa42uVGYKS3kZ077cyCn+F+aHSfhfjIoi3CO1r19B1qC2Js8xPSk4vVnQra6yl/TPOW9rLNX3muppKU1qKjWg5OK1kqitmr52yA9T1x7ku/Mddl2eB51Yd/VW/uVfuZ6u/qrf3Kv3A9D12XZ4Drr3pPldHnurv6q39yr9zHV39Vb+5V+4HpOtxe1NeDGvB/Mu/L1PKxx8qTlB061S0rqT6SWTSyvZko6Wk3ZYes3wUKjfcrAetjStmSlrcfQrYectSGtGWvqx1s38VlfzNmu/pfjICE8P3czdRgorLK+173yMUoyfwxS7bWL9DCpZyd35IglhaVld7XsXBG8xdGSKAAAAAAAAAAAAABTp/N+aXqXCnDf8Aml6lgtLYipMtR2IqzA1sizLIsqJKo+wz0nI1mLgbuk5DpORqFwNvScjHScjXcXA2dJyMOo+whcwBJE0QRJAbIFuOzuKkC3HZ3EorV/hfIuFOv8L5FxCqAAgAAAAAAAAAAAVIbX+aXqWypHbL80vUsFhbEVZlpbEVZhGpkWSZFlEWAwAMNXyMgghShqxUVdpK127vvZMAJJJMgEAiqkiSIokgNkC3HZ3FSBbjs7iKrV/hfIuIp1/hfIuIUAAQAAAAAAAAAAAKkdsvzP1LZVllKXcywb1sKsyxF5GmqswjQyLJsgyiLAYAAAAAAAQCAkiSIomgJwLcdncVaaLLeRBXrbGXCpLNxXFrw2stiqAAgAAAAAAAAAAAV8UrWlwyfJ/zzLBiSvk9gFaMxNmitF03xhufDsZjpDSMyIMlrEWwIsGQBgGQBgGQBgIyAMonEgmZ1gLECUplbpBTvN2js+aXDs5gWMOtaTluWS57y0RhBJJLYiRlQAAAAAAAAAAAAAAAGGk8nmuBSq4FbYS1fwvNd29F4AcapTqR+W/bF39czS67W2M/0yO+C6PPPFdkv0sx1tcJeDPRAaPO9cX4vBjri7fBnogNHneuLt8GOuLt8GeiA0ed62uEvBmViuyX6ZHoQNHAVdv5Z/pkbacZy2Ra7ZNL/Z2gNFClgb/HLujdef8A4XYQUUkkklsSJAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//9k="> 
-            </div>
-        </td>
-       
-    </tr>
-</table>
-<table>
-    <tr>
-        <td>
-            <div class="product_cell celular">
-                <h2>iPhone 14</h2>  
-                <h3> $350</h3>
-                <img width="200px" src="https://m.media-amazon.com/images/I/31wacBawB3L._SL500_.jpg" alt="Foto de iPhone 14 color negro"> 
-            </div>
-        </td>
-        <td>
-            <div class="product_cell laptop">
-                <h2>Macbook Air</h2>
-                <h3> $1249 </h3>
-                <img width= "200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6tGVF3Jsqs70vEDag93bFFNB2kkEj3AUjSw&usqp=CAU">     
-            </div>
-        </td>
-        <td>
-            <div class="product_cell audifono">
-                <h2>Airpods max</h2>
-                <h3> $340</h3>
-                <img width= "200px" src="data:image/jpeg;base64,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"> 
-            </div>
-        </td>
-       
-    </tr>
-</table>
-<section>
-    <h2> Contacto</h2>
-    <div class="div_form">
-        <form action="#">
-        <input type="text" name="" id="">
-        <button type="submit">Enviar</button>
-    </form>
-    </div>
-</section>
-</main>
+          </ul>
+        </div>
 
-<footer>
-<p style="text-align:center;"> Hecho con cariño por Código</p>
-</footer>
+
+        <div class="productos">
+
+          <div class="product celular">
+            <h2>iPhone 13</h2>
+            <h3 class="price">729</h3>
+            <img
+              src="https://images.unsplash.com/photo-1632633173522-47456de71b76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+              alt="Foto de iPhone 13 color silver"
+            />
+          </div>
+
+          <div class="product laptop">
+            <h2>Macbook Pro</h2>
+            <h3 class="price">1299</h3>
+            <img
+              src="https://images.unsplash.com/photo-1615750185825-fc85c6aba18d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt="Foto de macbook pro abierta"
+            />
+          </div>
+
+          <div class="product audifono">
+            <h2>Airpods Pro</h2>
+            <h3>$ 249</h3>
+            <img
+              src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt="Foto de airpods pro"
+            />
+          </div>
+
+          <div class="product celular">
+            <h2>iPhone 14</h2>
+            <h3>$ 879</h3>
+            <img
+              src="https://images.unsplash.com/photo-1653921167679-7676ed531a58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"
+              alt="Foto de iPhone 13 color silver"
+            />
+          </div>
+
+          <div class="product laptop">
+            <h2>Macbook Air</h2>
+            <h3>$ 999</h3>
+            <img
+              src="https://images.unsplash.com/photo-1532198528077-0d9e4ca9bb40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=847&q=80"
+              alt="Foto de macbook pro abierta"
+            />
+          </div>
+          
+          <div class="product audifono">
+            <h2>Airpods Max</h2>
+            <h3>$ 549</h3>
+            <img
+              src="https://images.unsplash.com/photo-1625245488600-f03fef636a3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+              alt="Foto de airpods pro"
+            />
+          </div>
+
         </div>
         
-    </body>
+        <section>
+          <h2>Contacto</h2>
+          <div class="div_form">
+            <form action="#">
+              <input type="text" name="" id="" />
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p style="text-align: center">Hecho con cariño por Código</p>
+      </footer>
+    </div>
+  </body>
 </html>
-
