@@ -1,0 +1,161 @@
+* {
+    font-family: outfit , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+.container {
+    background-color: hsl(217, 54%, 11%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.folleto {
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 550px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5px;    
+}
+
+
+.image {
+    background: url("../images/Reto2/image-equilibrium.jpg");
+    background-size: cover;
+    background-position: 0% 35%;
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 85%;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 270px;
+   
+    }
+.name {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    display: flex;
+    font-size: 24px;
+    margin-top: 15px;
+    
+    
+}
+.description {
+    color: hsl(215, 51%, 70%);
+    font-weight: 200px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-top: 15px;
+
+}
+.price-starter {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    height: 20%;
+    justify-content: space-between;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+    width: 80%;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    height: 20%;
+    justify-content: space-between;
+
+}
+
+.content-price {
+    width: 15%;
+    height: 100%;
+    margin: 5px;
+    
+    
+}
+
+.eth { 
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    color: hsl(178, 100%, 50%);
+    font-size: 14px;
+    margin-top: 2px;
+}
+.starter {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    height: 20%;
+    justify-content: space-between;
+
+}
+
+.clock {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+}
+
+.days { 
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+    margin-top: 2px;
+}
+.creator { 
+    
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    height: 15%;
+    justify-content: flex-start;
+    width: 80%;
+}
+.foto {
+    height: 70%;
+    border: 1px solid aliceblue;
+    border-radius: 50% ;
+    width: 15%;
+    margin-bottom: 20px;
+}
+
+.text {
+    margin-top: 5px; 
+    padding-left: 15px;
+    color: hsl(215, 51%, 70%);
+   
+}
+
+.name-creator {
+    margin-top: 5px; 
+    padding-left: 5px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
