@@ -9,8 +9,8 @@ body {
     background-color: red;
 }
 
-.h1 {
-font-size: 1.5em;
+h1 {
+    font-size: 1.5em;
 }
 
 .grid-container {
@@ -65,19 +65,35 @@ font-size: 1.5em;
 }
 
 .main .card {
-    height: 100px;
+    height: auto;
     background-color: brown;
     border-radius: 10px;
     padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    "avatar content"
+    ". time";
+    gap: 5px;
 
 
+}
+
+.main .card .avatar {
+    grid-area: avatar;
+}
+
+.main .card .content {
+    grid-area: content;
+}
+.main .card .time {
+    grid-area: time;
 }
 
 
 @media (min-width: 600px) {
 
     h1 {
-        font-size: 2cm;
+        font-size: 2em;
     }
     .grid-container {
         margin: 40px auto;
