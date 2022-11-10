@@ -13,7 +13,6 @@ export const getProfile = async () => {
         console.log("Error", error);
       }
     };
-    
     export const get = async () => {
       try {
         const response = await fetch(url);
@@ -21,6 +20,22 @@ export const getProfile = async () => {
         return data;
       } catch (error) {
         console.log(error);
+      }
+    };
+    
+    export const getById = async (id) => {
+      try {
+        const response = await fetch(url + "/" + id);
+        console.log(response);
+        if (response.ok) {
+          const data = await response.json();
+          return data;
+        } else {
+          return null;
+        }
+      } catch (error) {
+        console.log(error);
+        return null;
       }
     };
     
