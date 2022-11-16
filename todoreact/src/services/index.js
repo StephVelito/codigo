@@ -56,7 +56,7 @@ export const getProfile = async () => {
         console.log(error);
       }
     };
-
+    
     export const postUser = async (user) => {
       try {
         const response = await fetch(urlUsers, {

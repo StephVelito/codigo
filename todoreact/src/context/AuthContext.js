@@ -26,6 +26,7 @@ export const AuthProvider = (props) => {
 			userDB.id
 		);
 	}
+
 	const [user, setUser] = useState(userModel ?? {});
 
 	async function login(email, password) {

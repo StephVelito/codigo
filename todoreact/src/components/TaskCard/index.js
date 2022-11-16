@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 
 import Swal from "sweetalert2";
-import { destroy } from "../../services";
 
 function TaskCard(props) {
-  const { task, updateTask } = props;
+	const { task, updateTask } = props;
 
 	function statusClass() {
 		if (task.deletedAt !== null) {
